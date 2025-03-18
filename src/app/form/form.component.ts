@@ -10,4 +10,8 @@ export class FormComponent {
     weight:number = 0;
     height:number = 0;
     IMC:number = 0;
+
+    onClickCalculateButton(){
+      this.IMC = this.weight/(this.height * this.height);
+    }
 }
