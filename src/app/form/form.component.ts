@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
-
+    weight:number = 0;
+    height:number = 0;
+    IMC:number = 0;
 }
