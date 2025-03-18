@@ -1,13 +1,33 @@
 <form class="p-4 m-5 bg-dark rounded-4 shadow-lg text-light">
     <div class="mb-3">
-      <label for="weight" class="form-label">Insert your weight</label>
-      <input type="number" class="form-control" id="weight" [(ngModel)]="weight" name="weight">
-    </div>
-    <div class="mb-3">
-      <label for="height" class="form-label">Insert your height</label>
-      <input type="number" class="form-control" id="height" [(ngModel)]="height" name="height">
-    </div>
-    <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary">Calculate</button>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">IMC Calculator</h5>
+                <div class="mb-3">
+                  <label for="weight" class="form-label">Insert your weight</label>
+                  <input type="number" class="form-control" id="weight" [(ngModel)]="weight" name="weight">
+                </div>
+                <div class="mb-3">
+                  <label for="height" class="form-label">Insert your height</label>
+                  <input type="number" class="form-control" id="height" [(ngModel)]="height" name="height">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Calculate</button>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                    <label for="form-label">
+                        <h3>
+                            Your IMC: 
+                        </h3>
+                    </label>
+                    </div>
+                    <div class="col-4">
+                        {{IMC}}
+                    </div>
+                </div>
+            </div>
+            <img src="..." class="card-img-bottom" alt="...">
+          </div>
     </div>
   </form>
